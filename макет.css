@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #133534;
+  color: white;
+}
+
+.preview {
+  position: relative;
+  height: 100vh;
+}
+
+.previewlayer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.previewimg {
+  background-image: url(/tarhane.jpg);
+  background-size: cover;
+  z-index: 1;
+}
+
+.previewimgtel {
+  background-image: url(/tarhane2.jpg);
+  background-size: cover;
+  z-index: 1;
+}
+
+header {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 80px;
+  height: 25px;
+}
+
+nav {
+  display: flex;
+}
+.navitem {
+  text-decoration: none;
+  color: #133534;
+  font-size: 27px;
+}
+.navitem:not(:last-child) {
+  margin-right: 40px;
+}
+
+.accountwrapper {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #133534;
+}
+
+.accounttitle {
+  padding-left: 8px;
+}
+
+.titlewrapper {
+  z-index: 3;
+  top: 25%;
+  left: 8%;
+  min-width: 950px;
+  margin-top: -5%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+}
+
+.titletext {
+  font-size: 30px;
+  color: #fbd784;
+  padding-left: 32px;
+  text-transform: uppercase;
+}
+
+/* .textfone {
+  background-color: #fbd784;
+  opacity: 0.5;
+} */
+
+.titledescription {
+  font-size: 64px;
+  color: #ffffff;
+  background-color: transparent;
+  background-color: rgba(251, 215, 132, 0.6);
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 200px;
+}
+
+.sectioninfo {
+  position: relative;
+  min-width: 632px;
+  padding-left: 230px;
+  padding-right: 80px;
+}
+
+.sectioncount {
+  position: absolute;
+  font-size: 240px;
+  font-weight: 700;
+  color: white;
+  opacity: 0.1;
+  top: -115px;
+  left: 100px;
+}
+
+.sectionheader {
+  display: flex;
+  align-items: center;
+}
+
+.sectionitem {
+  color: #fbd784;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+.sectioninfotitle {
+  font-size: 52px;
+  padding-top: 27px;
+  font-weight: 600;
+}
+
+.content {
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+}
+
+.sectioninfotext {
+  font-size: 30px;
+  padding-top: 27px;
+}
+
+.sectionimg1 {
+  padding-right: 80px;
+  padding-left: 170px;
+  max-width: 566px;
+  max-height: 720px;
+}
+
+.sectionimg2 {
+  display: flex;
+  order: -1;
+  padding-right: 80px;
+  padding-left: 170px;
+  max-width: 566px;
+  max-height: 720px;
+}
+
+.sectionimg3 {
+  padding-right: 80px;
+  padding-left: 170px;
+  max-width: 566px;
+  max-height: 720px;
+}
+
+footer {
+  padding: 120px 229px;
+  background-color: #1e1d27;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footertitle {
+  font-size: 24px;
+  line-height: 32px;
+  color: #fbd784;
+}
+
+.rul {
+  margin-top: 122px;
+  color: white;
+}
+
+.info {
+  color: white;
+  margin-top: 24px;
+}
+
+.footerinfo {
+  font-size: 18px;
+  line-height: 32px;
+}
+/* для телефонов */
+@media (max-width: 768px) {
+  .navitem {
+    color: #ffffff;
+  }
+  .accounttitle {
+    color: #ffffff;
+  }
+  .previewimg {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .accounttitle {
+    display: none;
+  }
+  .titletext {
+    font-size: 20px;
+  }
+  .titledescription {
+    font-size: 40px;
+  }
+  .pkimg {
+    display: none;
+  }
+  .sectioninfo {
+    padding-left: 230px;
+    padding-right: 80px;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+  }
+  .sectioncount {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 700;
+    margin-left: -60px;
+    
+  }
+  .sectioninfotitle {
+    font-size: 36px;
+    
+  }
+  .sectioninfotext {
+    font-size: 25px;
+    
+  }
+  .telimg{
+    padding: 0px;
+  }
+.sectioninfo{
+  padding: 0;
+}
+footer{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer2{
+  display: none;
+}
+}
+
+/* для пк */
+@media (min-width: 769px) {
+  .previewimgtel {
+    display: none;
+  }
+  .brtel {
+    display: none;
+  }
+  .telimg {
+    display: none;
+  }
+}
